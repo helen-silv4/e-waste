@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    position: relative;
+    padding: 20px 30px;
+    width: 100%;
+    background-color: #142a6c;
+    display: flex;
+    align-items: center; 
+}
+.logo-imagem{
+    width: 45px;
+    height: 45px;
+}
+.logo-text {
+    color: rgb(0, 127, 231);
+}
+.container-logo{
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 45px;
+    width: 80%;
+    justify-content: center;
+}
+.nav-letters {
+    font-weight: 700;
+}
+
+.nav-letters a {
+    text-decoration: none;
+    color: rgb(231, 231, 231);
+    font-family: 'Fira Code', monospace;
+    font-weight: 700;
+}
+.nav-letters:hover {
+    transform: scale(1.1);
+}
+
+.embrulho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.divtext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.subtitleI {
+text-align: center;
+}
+
+.sideimg {
+    width: 30%;
+    height: auto;
+    background-color: transparent;
+}
+.sidetext {
+    text-align: justify;
+    font-size:20px;
+    width: 50%;
+    line-height: 1.6;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+@media only screen and (max-width: 1200px) {
+    .sidetext {
+        width: 50%;   
+    }
+}
+@media only screen and (max-width: 750px) {
+    .sidetext {
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .divtext {
+        flex-direction: column;
+    } 
+    .divtext.-right {
+        flex-direction: column-reverse;
+    }
+    .sidetext {
+        width: 90%;
+        font-size: 18px;
+    }
+    .sideimg {
+        width: 60%;
+        height: auto;
+        background-color: transparent;
+    }
+}
+

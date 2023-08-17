@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../assets/images/logo.jpg" type="image/x-icon">
+
+    <link rel="stylesheet" href="../../styles/styleCombater.css">
+
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="../../styles/components/header-main.css">
+    <link rel="stylesheet" href="../../styles/components/menu-main.css">
+    <link rel="stylesheet" href="../../styles/components/action-link.css">
+    <link rel="stylesheet" href="../../styles/components/wrapper-main.css">
+    <link rel="stylesheet" href="../../styles/components/language-dropdown.css">
+
+    <link rel="stylesheet" href="../../styles/components/banner-main.css">
+    <link rel="stylesheet" href="../../styles/components/carousel-main.css">
+    <link rel="stylesheet" href="../../styles/components/button-arrow.css">
+    <link rel="stylesheet" href="../../styles/components/button-circle.css">
+
+    <link rel="stylesheet" href="../../styles/components/title-main.css">
+    <link rel="stylesheet" href="../../styles/components/footer-main.css">
+
+    <title>E-Waste</title>
+</head>
+<body>
+    <!--Menu principal-->
+    <header class="header-main">
+        <a class="wrapperLogo" href="home-en.html"><img class="logoImage" src="../../assets/images/logo.png" alt="Logo E-Waste"></a>
+
+        <nav id="menu-nav" class="menu-main">
+            <a class="action-link" href="../pages-en/home-en.html">Home</a>
+            <a class="action-link" href="impacts-en.html">Impacts</a>
+            <a class="action-link" href="causes-en.html">Causes</a>
+            <a class="action-link" href="../pages-en/howToCombat-en.html">How to combat?</a>
+            <a class="action-link" href="../pages-en/contacts-en.html">Contact us</a>
+        
+            <div class="wrapper-dropdown">
+            <button class="language-dropdown" onclick="selectLanguage()">
+                Change language
+                <img class="arrow" src="../../assets/images/arrow-down.svg" alt="">
+            </button>
+            <div class="modal-flags">
+                <a class="flag-option" href="../pages-pt-br/comoCombater.html"><img class="flag-language" src="../../assets/images/brazil-flag.png" alt="Icon Brazil flag"></a>
+                <a class="flag-option"><img class="flag-language" src="../../assets/images/united-states-flag.png" alt="Icon EUA flag"></a>
+            </div>
+        </div>
+             
+        </nav>
+
+        <a class="mobile-menu" onclick="toggleMenu()"><span class="lines">Menu</span></a>
+
+        
+    </header>
+
+    <section class="banner-main">
+
+        <div class="carousel-main">
+        <button class="button-arrow -left" onclick="previousSlide()">Go to previous slide</button>
+
+            <ol class="carousel-viewport">
+                
+                <li id="slideOne" class="slide -onScreen">
+                    <picture> 
+                        <source srcset="../../assets/slides/slide1px2000.png" media="(min-width:1500px)" >
+                        <source srcset="../../assets/slides/slide1px1500.png" media="(min-width:800px)" >
+                        <img class="slideImage" src="../../assets/slides/slide1px800.png" alt="">
+                        <figcaption class="caption-slide">E-Waste</figcaption>
+                    </picture>
+                </li>
+                <li id="slideTwo" class="slide">
+                    <picture>
+                        <source srcset="../../assets/slides/slide2px2000.png" media="(min-width:1500px)" >
+                        <source srcset="../../assets/slides/slide2px1500.png" media="(min-width:800px)" >
+                        <img class="slideImage" src="../../assets/slides/slide2px800.png" alt="">
+                        <figcaption class="caption-slide">We are your partner when it comes to combat!</figcaption>
+                    </picture>    
+                </li>
+                <li id="slideThree" class="slide">
+                    <picture>
+                        <source srcset="../../assets/slides/slide3px2000.png" media="(min-width:1500px)" >
+                        <source srcset="../../assets/slides/slide3px1500.png" media="(min-width:800px)" >
+                        <img class="slideImage" src="../../assets/slides/slide3px800.png" alt="">
+                        <figcaption class="caption-slide">Dispose of it correctly!</figcaption>
+                    </picture>               
+                </li>
+                    
+            </ol>
+
+            <ol class="nav-slides">
+                <li id="circleOne" class="button-circle -onScreen" onclick="circleReference(1)">Go to slide one</li>
+                <li id="circleTwo" class="button-circle" onclick="circleReference(2)">Go to slide two</li>
+                <li id="circleThree" class="button-circle" onclick="circleReference(3)">Go to slide three</li>
+            </ol>
+
+        <button class="button-arrow -right" onclick="nextSlide()">Go to next slide</button>
+        </div>
+
+    </section>
+
+    
+    
+    <!--Conteúdo da página-->
+    <section class="section-mainC">
+        <h1 class="title-main">How to combat electronic waste?</h1>
+        <article class="article-mainC">
+            <article class="wrapper-mainC -ilustrationC">
+                <img class="ilustration-mainC" src="../../assets/images/img.png" alt="ilustração">
+                <p class="text-mainC">
+                    Improper disposal of electronic waste can cause serious damage to the environment 
+                    and human health. This is because these materials have toxic substances in their 
+                    composition, such as merchandise, lead, cadmium and other heavy metals that can 
+                    contaminate soil, water and air. To combat electronic waste, it is necessary to 
+                    adopt measures such as raising public awareness of the damage caused by improper 
+                    disposal of these materials and the implementation of policies aimed at solid waste 
+                    management. There are several ways to tackle this problem:
+                </p>
+            </article>
+            <br>
+            <article class="wrapper-mainC">
+                <p class="text-mainC paragraph"><b>Consumption reduction:</b> one of the main ways to combat 
+                    electronic waste is to reduce the consumption of electronic devices. This can be done by 
+                    choosing more durable, preserved products rather than replacing and buying used devices.
+                </p>
+                
+                <p class="text-mainC paragraph"><b>Reverse logistic:</b> many brands already have reverse 
+                    logistics programs that allow the return of obsolete or damaged electronic devices. 
+                    It is important that consumers make use of these services to ensure these materials 
+                    are disposed of correctly.
+                </p>
+
+                <p class="text-mainC paragraph"><b>Recycling:</b> electronics recycling is an important way 
+                    to reduce the environmental impact caused by electronic waste. Specialized companies 
+                    can recover precious metals and other materials from electronic devices.
+                </p>
+                
+                <p class="text-mainC paragraph"><b>Education and awareness:</b> It is important for society to be 
+                    aware of the seriousness of the electronic waste problem and to take measures to prevent the 
+                    inappropriate disposal of these materials. This can be done through awareness campaigns, 
+                    educational programs and dissemination of information about the correct disposal of electronic waste.
+                </p>
+                
+                <p class="text-mainC paragraph"><b>Regulation:</b> Public authorities can help combat e-waste 
+                    by creating laws and regulations that hold manufacturers and importers accountable 
+                    for properly managing these materials.
+                </p>
+
+                <p class="text-mainC paragraph">In short, the fight against electronic waste requires joint 
+                    actions by governments, manufacturers, importers, recycling companies, consumers and 
+                    society in general. The adoption of measures aimed at reducing consumption, as 
+                    previously mentioned, can contribute significantly to reducing the environmental impact 
+                    caused by electronic waste.
+                </p>
+            </article>
+        </article>
+        <br>
+    </section>  
+    <!--Rodapé-->
+    <footer class="footer-main">
+        <h2 class="title-main -second">&#169;E-Waste 2023</h2>
+    </footer>   
+    <!--Chamando o script-->  
+    <script src="../../scripts/scriptCombater.js"></script>
+    <script src="../../scripts/components/carousel-move.js"></script>
+    <script src="../../scripts/components/toggleMobileMenu.js"></script>
+    <script src="../../scripts/components/dropdown-flags.js"></script>
+</body>
+</html>

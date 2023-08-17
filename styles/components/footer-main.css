@@ -1,0 +1,8 @@
+.footer-main {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    background-color: var(--color-sixth);
+    margin-top: 50px;
+}
+

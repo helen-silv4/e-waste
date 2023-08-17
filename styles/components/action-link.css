@@ -1,0 +1,18 @@
+.action-link {
+    font-family: sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.action-link:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1080px) {
+    .action-link {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>E-Waste</title>
+
+    <link rel="shortcut icon" href="../../assets/images/logo.jpg" type="image/x-icon">
+    <!-- FONTS FIRACODE(400, 500, 700)  POPPINS(400, 500, 600)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet"> 
+
+
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="../../styles/reset.css">
+
+    <link rel="stylesheet" href="../../styles/components/header-main.css">
+    <link rel="stylesheet" href="../../styles/components/menu-main.css">
+    <link rel="stylesheet" href="../../styles/components/action-link.css">
+    <link rel="stylesheet" href="../../styles/components/wrapper-main.css">
+    <link rel="stylesheet" href="../../styles/components/language-dropdown.css"> 
+
+    <link rel="stylesheet" href="../../styles/components/banner-main.css">
+    <link rel="stylesheet" href="../../styles/components/carousel-main.css">
+    <link rel="stylesheet" href="../../styles/components/button-arrow.css">
+    <link rel="stylesheet" href="../../styles/components/button-circle.css">
+
+    <link rel="stylesheet" href="../../styles/components/section-main.css">
+    <link rel="stylesheet" href="../../styles/components/title-main.css">
+    <link rel="stylesheet" href="../../styles/components/article-main.css">
+    <link rel="stylesheet" href="../../styles/components/text-main.css">
+    <link rel="stylesheet" href="../../styles/components/ilustration-main.css">
+
+    <link rel="stylesheet" href="../../styles/components/footer-main.css">
+
+</head>
+<body>
+    <header class="header-main">
+        <a class="wrapperLogo" href="home-en.html"><img class="logoImage" src="../../assets/images/logo.png" alt="Logo E-Waste"></a>
+
+        <nav id="menu-nav" class="menu-main">
+            <a class="action-link" href="home-en.html">Home</a>
+            <a class="action-link" href="impacts-en.html">Impacts</a>
+            <a class="action-link" href="causes-en.html">Causes</a>
+            <a class="action-link" href="../pages-en/howToCombat-en.html">How to combat?</a>
+            <a class="action-link" href="contacts-en.html">Contact us</a>
+        
+            <div class="wrapper-dropdown">
+            <button class="language-dropdown" onclick="selectLanguage()">
+                Change language
+                <img class="arrow" src="../../assets/images/arrow-down.svg" alt="">
+            </button>
+            <div class="modal-flags">
+                <a class="flag-option" href="../../index.html"><img class="flag-language" src="../../assets/images/brazil-flag.png" alt="Icon flag Brazil."></a>
+                <a class="flag-option"><img class="flag-language" src="../../assets/images/united-states-flag.png" alt="Icon flag EUA."></a>
+            </div>
+        </div>
+             
+        </nav>
+
+        <a class="mobile-menu" onclick="toggleMenu()"><span class="lines">Menu</span></a>
+
+        
+    </header>
+
+    <section class="banner-main">
+
+        <div class="carousel-main">
+        <button class="button-arrow -left" onclick="previousSlide()">Go to previous slide</button>
+
+            <ol class="carousel-viewport">
+                
+                <li id="slideOne" class="slide -onScreen">
+                    <picture> 
+                        <source srcset="../../assets/slides/slide1px2000.png" media="(min-width:1500px)" >
+                        <source srcset="../../assets/slides/slide1px1500.png" media="(min-width:800px)" >
+                        <img class="slideImage" src="../../assets/slides/slide1px800.png" alt="">
+                        <figcaption class="caption-slide">E-Waste</figcaption>
+                    </picture>
+                </li>
+                <li id="slideTwo" class="slide">
+                    <picture>
+                        <source srcset="../../assets/slides/slide2px2000.png" media="(min-width:1500px)" >
+                        <source srcset="../../assets/slides/slide2px1500.png" media="(min-width:800px)" >
+                        <img class="slideImage" src="../../assets/slides/slide2px800.png" alt="">
+                        <figcaption class="caption-slide">We are your partner when it comes to combat!</figcaption>
+                    </picture>    
+                </li>
+                <li id="slideThree" class="slide">
+                    <picture>
+                        <source srcset="../../assets/slides/slide3px2000.png" media="(min-width:1500px)" >
+                        <source srcset="../../assets/slides/slide3px1500.png" media="(min-width:800px)" >
+                        <img class="slideImage" src="../../assets/slides/slide3px800.png" alt="">
+                        <figcaption class="caption-slide">Dispose of it correctly!</figcaption>
+                    </picture>               
+                </li>
+                    
+            </ol>
+
+            <ol class="nav-slides">
+                <li id="circleOne" class="button-circle -onScreen" onclick="circleReference(1)">Go to slide one</li>
+                <li id="circleTwo" class="button-circle" onclick="circleReference(2)">Go to slide two</li>
+                <li id="circleThree" class="button-circle" onclick="circleReference(3)">Go to slide three</li>
+            </ol>
+
+        <button class="button-arrow -right" onclick="nextSlide()">Go to next slide</button>
+        </div>
+
+    </section>
+
+    <section class="section-main">
+        
+        <h1 class="title-main"> What is electronic waste?</h1>
+
+        <article class="article-main">
+
+            <article class="wrapper-main -ilustration">
+                <img class="ilustration-main" src="../../assets/ilustrations/question.svg" alt="Questioning scene illustration.">
+                <p class="text-main">
+                    E-waste is all waste from electronic materials,
+                    being of inorganic origin some examples of it are: copper, lead, aluminum...
+                </p>
+            </article>
+            <article class="wrapper-main -ilustration -right">
+                <p class="text-main">
+                    With the exponential evolution of technology, the use of electronic devices is growing every day.
+                    more and more, and year after year companies launch more and more electronic gadgets
+                    inserting their need to improve people's lives, who often end up buying
+                    state-of-the-art equipment, often without such a need and consequently generating
+                    more and more junk mail.
+                </p>
+                <img class="ilustration-main" src="../../assets/ilustrations/conect.svg" alt="Illustration about internet connectivity.">
+            </article>
+            
+            <article class="wrapper-main -ilustration">
+                <img class="ilustration-main" src="../../assets/ilustrations/concientizar.png" alt="Illustration someone teaching.">
+                <p class="text-main">
+                    Therefore, it is necessary to make people aware that electronic waste can be harmful.
+                    the lives of beings and the environment, as they are
+                    composed of very polluting elements compromising the environment and also many of these elements
+                    in contact with the skin can bring various diseases to animals and humans.
+                </p>
+            </article>
+            
+        </article>   
+    </section>
+    
+    <footer class="footer-main">
+        <h2 class="title-main -second">&#169;E-Waste 2023</h2>
+    </footer>
+
+    <script src="../../scripts/components/toggleMobileMenu.js"></script>
+    <script src="../../scripts/components/carousel-move.js"></script>
+    <script src="../../scripts/components/dropdown-flags.js"></script>
+</body>
+</html>

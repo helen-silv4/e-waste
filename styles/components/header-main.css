@@ -1,0 +1,22 @@
+.header-main {
+    position: relative;
+    background-color: var(--remaster);
+    
+    box-sizing: border-box;
+    height: 70px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-main .wrapperLogo {
+    height: 100%;
+    width: auto;
+    z-index: 3;
+}
+
+.header-main .logoImage {
+    height: 100%;
+    width: auto;
+}
