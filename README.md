@@ -1,7 +1,7 @@
 <h1 align="center"> E-Waste </h1>
 
 <p align="center">
-  <img alt="projeto E-Waste" src="assets/images/preview.jpg" width="100%">
+  <img alt="projeto E-Waste" src="assets/images/preview.png" width="100%">
 </p>
 
 ## 💻 Projeto
