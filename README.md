@@ -19,7 +19,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Git e Github
 - Figma
 
-## :juggling_person: Contribuidores
+## :handshake: Contribuidores
 
 <table>
   <tr>
